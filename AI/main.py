@@ -29,7 +29,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmb
 # ENV & PATHS
 # =========================
 BASE_DIR = Path(__file__).resolve().parent
-load_dotenv(BASE_DIR / ".env")
+# load_dotenv(BASE_DIR / ".env")
+load_dotenv()
 
 DATA_DIR      = BASE_DIR / "data"
 UPLOAD_DIR    = DATA_DIR / "uploads"
