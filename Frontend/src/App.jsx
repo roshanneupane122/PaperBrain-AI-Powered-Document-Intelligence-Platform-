@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useAuth } from "./context/AuthContext";
 import { LogOut, Upload, FileText, Trash2, Send, Database, ShieldCheck } from "lucide-react";
 
-const API_BASE = "http://127.0.0.1:5000/api/ai";
+const API_BASE = `${import.meta.env.VITE_API_BASE}/ai`;
 
 function formatDate(value) {
   if (!value) return "";
